@@ -19,7 +19,7 @@ public class WindowBuilder implements ActionListener{
 	JButton leftbutton;
 	JButton recordbutton;
 	JButton stopbutton;
-	WindowBuilder(){
+	public WindowBuilder(){
 		instructionManager=new InstructionManager();
 		window=new JFrame();
 		window.setVisible(true);
@@ -53,11 +53,12 @@ public class WindowBuilder implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		if(e.getSource()==upbutton){
-			instructionManager.upbuttonclicked();
+		if(e.getSource()==add){
+			instructionManager.addbuttonclicked();
 		}
-		if(e.getSource()==downbutton){
-			instructionManager.downbuttonclicked();
+		
+		if(e.getSource()==view{
+			instructionManager.viewbuttonclicked();
 		}
 		if(e.getSource()==rightbutton){
 			instructionManager.rightbuttonclicked();
